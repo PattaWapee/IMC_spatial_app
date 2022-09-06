@@ -1,0 +1,4 @@
+#!/Users/pattama/Desktop/UiB/cancer/web_app/steamlit/env/bin/python3
+"""Small script to execute the igraph command line interface"""
+from igraph.app.shell import main
+main()
