@@ -10,7 +10,7 @@ st.markdown("""
 """
             )
 
-sd.sidebar.markdown("# Epithelial vs Fibroblast")
+st.sidebar.markdown("# Epithelial vs Fibroblast")
 
 
 def plt_spatial(adata, obs_col):
