@@ -57,3 +57,24 @@ st.write('### Show only cluster ' + cl_input)
 fig2 = plt_spatial(adata_filtered, epi_marker)
 st.pyplot(fig2)
 
+# 4. get merge cluster list and selected color from user
+if "userdf" not in st.session_state:
+    st.session_state.userdf = pd.DataFrame(columns = ['Cluster_list', 'name','color'])
+
+col1, col2, col3 = st.columns(3)
+cl_input2 = col1.text_input('1,2')
+name_merged = col2.text_input('Fibro_A')
+color = col3.text_input('red')
+
+run = st.button('Submit')
+new_input_df = pd.DataFrame({'Cluster_list':cl_input2,
+                        'name':name_merged,
+                        'color':color
+                        })
+
+if run:
+    st.session_state.userdf = pd.concat([st.session_state.userdf, new_input_df], axis = 0)
+    st.dataframe(st.session_state.userdf)
+
+
+
