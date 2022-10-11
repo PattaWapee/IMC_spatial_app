@@ -40,7 +40,7 @@ img_name = st.sidebar.selectbox(
     "Select image", ('R2(Basal like)', 'R4(ER+)', 'R5(HER2+)'))
 img = img_name.split('(')[0]
 
-adata = sc.read_h5ad('../data/BBXB/Epi_Fibro_'+img+'_spatial.h5ad')
+adata = sc.read_h5ad('data/BBXB/Epi_Fibro_'+img+'_spatial.h5ad')
 
 # 2. choose marker and show spatial plot for all cluster
 epi_marker = st.sidebar.selectbox(
