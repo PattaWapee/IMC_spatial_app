@@ -13,7 +13,7 @@ st.markdown("""
 """
             )
 # 1. import anndata
-st.sidebar.header("Section 1. Spatail plot")
+st.sidebar.header("Section 1. Spatial plot")
 
 img_name = st.sidebar.selectbox(
     "1. Select image", ('R2(Basal like)', 'R4(ER+)', 'R5(HER2+)'))
