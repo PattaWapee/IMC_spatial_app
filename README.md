@@ -2,6 +2,6 @@
 This is a streamlit web application for IMC spatial analysis
 
 The link to web app is 
-https://pattawapee-imc-spatial-app-main-page-pcon1k.streamlitapp.com/Epithelial_Fibroblast
+https://pattawapee-imc-spatial-app-main-page-pcon1k.streamlitapp.com/Tcells_Fibroblast_BBXB
 
 
